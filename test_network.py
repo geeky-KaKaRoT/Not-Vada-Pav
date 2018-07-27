@@ -40,7 +40,8 @@ label = "{}: {:.2f}%".format(label, proba * 100)
 output = imutils.resize(orig, width=400)
 cv2.putText(output, label, (10, 25),  cv2.FONT_HERSHEY_SIMPLEX,
 	0.7, (0, 255, 0), 2)
- 
+img_name = str(args["image"]).split(".")
+
 # show the output image
-cv2.imshow("Output", output)
+cv2.imwrite("{}_result.jpg".format(img_name[-2]), output)
 cv2.waitKey(0)
