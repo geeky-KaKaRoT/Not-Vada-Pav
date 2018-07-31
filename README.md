@@ -1,5 +1,5 @@
 # Not-Vada-Pav
-Deep image Classification for Vada Pav or Not with LesNet:
+Deep image Classification for Vada Pav or Not with LeNet:
 
 1.Data Collection
 * Images of Vada pav are being searched in Google Images and scrolled through the desired number of images.
